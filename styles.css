@@ -24,7 +24,7 @@ body{
     border-radius: 10px;
 }
 
-.todo-app h1{
+.todo-app h2{
     color: #002765;
     display: flex;
     justify-content: center;
@@ -107,6 +107,39 @@ ul li span:hover{
     background: #b6b0af;
 }
 
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
 
+.filter-btn {
+    background: #edeef0;
+    color: #555;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
 
+.filter-btn.active {
+    background: #ff5945;
+    color: #fff;
+}
 
+.filter-btn:hover {
+    background: #dcdde1;
+}
+
+.hidden {
+    display: none ;
+}
+
+#empty-message {
+    display: none;
+    text-align: center;
+    color: #777;
+    margin-top: 20px;
+    font-style: italic;
+}

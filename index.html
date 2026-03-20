@@ -10,10 +10,19 @@
     <div class="container">
        <div class="todo-app">
             <h2>To-Do List</h2>
+            
             <div class="row">
                 <input type="text"  id="input-box" placeholder="Enter a new task">
                 <button id="add-btn" onClick="addTask()">Add</button>
             </div>
+            <div class="filters">
+    <button class="filter-btn active" onclick="filterTasks('all')">All</button>
+    <button class="filter-btn" onclick="filterTasks('active')">Active</button>
+    <button class="filter-btn" onclick="filterTasks('completed')">Completed</button>
+</div>
+<p id="empty-message" class="empty-message">
+        All caught up! Time to relax.
+    </p>
             <ul id="list-container">
                 <!-- <li class="checked">Task 1</li>
                 <li>Task 2</li>
