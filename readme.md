@@ -17,8 +17,6 @@ Learning how to turn JavaScript objects into strings and back again to save data
 
 ## ⭐ My Experience as a Beginner Developer
 
-As a beginner, this project was both challenging and rewarding. At first, CSS positioning and JavaScript logic felt like separate worlds. However, connecting them—making a button click change a CSS class which then triggers a visual transition—felt like magic. 
-
 The biggest takeaway was the importance of **debugging**. Watching the console and tracing why a function didn't run taught me to think more like a programmer: step-by-step, logical, and patient.
 
 --
