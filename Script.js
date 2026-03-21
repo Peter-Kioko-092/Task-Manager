@@ -5,6 +5,7 @@ const buttons = document.querySelectorAll('.filter-btn');
 const emptyMessage = document.getElementById('empty-message');
 const tasks = listContainer.getElementsByTagName('li');
 
+
 inputBox.addEventListener("keypress", function(e) {
     if (e.key === "Enter") {
         addTask();
@@ -89,10 +90,6 @@ function filterTasks(filter) {
 }
 
 function checkEmpty() {
-    const emptyMessage = document.getElementById('empty-message');
-    const tasks = listContainer.getElementsByTagName('li');
-    
-  
     let activeTasks = 0;
     for (let task of tasks) {
         if (!task.classList.contains('checked')) {
