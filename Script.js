@@ -6,8 +6,8 @@ const emptyMessage = document.getElementById('empty-message');
 const tasks = listContainer.getElementsByTagName('li');
 
 
-inputBox.addEventListener("keypress", function(e) {
-    if (e.key === "Enter") {
+inputBox.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
         addTask();
     }
 });
@@ -69,8 +69,7 @@ function filterTasks(filter) {
             case 'all':
                 task.classList.remove('hidden');
                 break;
-            case 'active':
-                
+            case 'active': 
                 if (task.classList.contains('checked')) {
                     task.classList.add('hidden');
                 } else {
@@ -78,7 +77,6 @@ function filterTasks(filter) {
                 }
                 break;
             case 'completed':
-                
                 if (task.classList.contains('checked')) {
                     task.classList.remove('hidden');
                 } else {
